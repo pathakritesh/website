@@ -10,12 +10,12 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - zip hello.zip ./index.html ./aws.gif ./1.png ./back.jpg
+      - zip hello.zip ./index.nginx-debian.html ./aws.gif ./1.png ./back.jpg
    
 artifacts:
   type: 
   files:
-    - index.html
+    - index.nginx-debian.html
     - appspec.yml
     - scripts/install_dependencies
     - scripts/start_server
